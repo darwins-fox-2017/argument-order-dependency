@@ -3,7 +3,9 @@
 class Car {
 
   start_car (options) {
-    if (options && options['headlights']) {
+    if (options && options.hasOwnProperty('headlights')) {
+      //hasOwnProperty mencari propery hilight didalam propery option yang sudah didefinisikan false
+      //sehinga tru & false = false
       this.headlights = options['headlights']
     } else {
       this.headlights = true
