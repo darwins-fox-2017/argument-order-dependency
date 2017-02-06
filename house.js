@@ -33,7 +33,7 @@ class House {
   }
 }
 
-// const cool = new House('address', 100, 2, 2, 12345, 12345, true, true)
+
 let houseComp = {
   address : 'Jl. Gunung Sahari',
   square_feet : 100,
@@ -45,5 +45,6 @@ let houseComp = {
   has_tenants : true
 }
 
-console.log(houseComp)
-// console.log(cool.to_s())
+const cool = new House(houseComp)
+// console.log(houseComp)
+console.log(cool.to_s())
