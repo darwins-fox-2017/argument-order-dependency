@@ -2,7 +2,7 @@
 
 class House {
 
-  constructor (address, square_feet, num_bedrooms, num_baths, cost, down_payment, sold, short_sale, has_tenants) {
+  constructor () {
     this.address = address
     this.square_feet = square_feet
     this.num_bedrooms = num_bedrooms || 3
@@ -36,4 +36,3 @@ class House {
 const cool = new House('address', 100, 2, 2, 12345, 12345, true, true)
 
 console.log(cool.to_s())
-
